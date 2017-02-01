@@ -96,7 +96,7 @@ One platform to save you time & money designed and created just for retailers.
                         </div>
                         <div class="col-md-6">
                              <label class="custom_label" for="position">Position</label>
-                           <input type="text" name="cm-f-udljdj" id="retailer" class="form-control custom_control" />
+                           <input type="text" name="cm-f-udljdj" id="position" class="form-control custom_control" />
                         </div>
                         <div class="col-md-12 text-center">
                             <input type="submit" value="Start" class="send_btn" />
@@ -123,6 +123,7 @@ One platform to save you time & money designed and created just for retailers.
             custom.email = $('#email').val()
             custom.phone = $('#phone').val();
             custom.retailer = $('#retailer').val();
+            custom.position = $('#position').val();
             post_data.custom = custom;
             $.post("http://home.mallmaverick.com/custom_email", post_data, function(data, status, xhr){
                 if(status == "success"){
